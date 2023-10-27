@@ -38,7 +38,7 @@ export default function Task({ item }: TaskProps) {
                     <Textarea
                         placeholder="Digite seu comentário..."
                     />
-                    <button className={styles.button}>Comentar</button>
+                    <button className={styles.button}>Enviar comentário</button>
                 </form>
             </section>
         </div>
