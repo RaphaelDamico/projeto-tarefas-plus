@@ -2,13 +2,8 @@ import Head from 'next/head';
 import styles from './styles.module.css';
 import { GetServerSideProps } from 'next';
 import { db } from '../../services/firebaseConnection';
-import { 
-    doc,
-    collection,
-    query,
-    where,
-    getDoc
-} from 'firebase/firestore';
+import { doc, collection, query, where, getDoc } from 'firebase/firestore';
+import { Textarea } from '../../components/textarea';
 
 interface TaskProps {
     item: {
@@ -35,6 +30,17 @@ export default function Task({ item }: TaskProps) {
                     </p>
                 </article>
             </main>
+
+            <section className={styles.commentsContainer}>
+                <h2>Deixar comentário</h2>
+                
+                <form>
+                    <Textarea
+                        placeholder="Digite seu comentário..."
+                    />
+                    <button className={styles.button}>Comentar</button>
+                </form>
+            </section>
         </div>
     );
 }
