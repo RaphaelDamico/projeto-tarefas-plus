@@ -6,6 +6,7 @@ import { GetServerSideProps } from 'next';
 import { db } from '../../services/firebaseConnection';
 import { doc, collection, query, where, getDoc, addDoc, getDocs } from 'firebase/firestore';
 import { Textarea } from '../../components/textarea';
+import { FaTrash } from 'react-icons/fa';
 
 interface TaskProps {
     item: {
@@ -89,6 +90,12 @@ export default function Task({ item, allComments }: TaskProps) {
 
                 {comments.map((item) => (
                     <article key={item.id} className={styles.comment}>
+                        <div className={styles.headComment}>
+                            <label className={styles.commentsLabel}>{item.name}</label>
+                            <button className={styles.buttonTrash}>
+                                <FaTrash size={18} color= "#EA3140"/>
+                            </button>
+                        </div>
                         <p>{item.comment}</p>
                     </article>
                 ))}
