@@ -92,9 +92,11 @@ export default function Task({ item, allComments }: TaskProps) {
                     <article key={item.id} className={styles.comment}>
                         <div className={styles.headComment}>
                             <label className={styles.commentsLabel}>{item.name}</label>
-                            <button className={styles.buttonTrash}>
-                                <FaTrash size={18} color= "#EA3140"/>
-                            </button>
+                            {item.user === session?.user?.email && (
+                                <button className={styles.buttonTrash}>
+                                    <FaTrash size={18} color= "#EA3140"/>
+                                </button>
+                            )}
                         </div>
                         <p>{item.comment}</p>
                     </article>
