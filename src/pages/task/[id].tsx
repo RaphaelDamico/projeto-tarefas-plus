@@ -10,7 +10,17 @@ import {
     getDoc
 } from 'firebase/firestore';
 
-export default function Task() {
+interface TaskProps {
+    item: {
+        tarefa: string;
+        public: boolean;
+        created: string;
+        user: string;
+        taskId: string;
+    };
+}
+
+export default function Task({ item }: TaskProps) {
     return(
         <div className={styles.container}>
             <Head>
@@ -19,6 +29,11 @@ export default function Task() {
 
             <main className={styles.main}>
                 <h1>Tarefa</h1>
+                <article className={styles.task}>
+                    <p>
+                        {item.tarefa}
+                    </p>
+                </article>
             </main>
         </div>
     );
@@ -61,6 +76,8 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
 
     console.log(task);
     return{
-        props: {}
+        props: {
+            item: task,
+        },
     };
 };
