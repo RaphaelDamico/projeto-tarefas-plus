@@ -49,6 +49,15 @@ export default function Task({ item, allComments }: TaskProps) {
                 taskId: item?.taskId
             });
 
+            const data = {
+                id: docRef.id,
+                comment: input,
+                user: session?.user?.email,
+                name: session?.user?.name,
+                taskId: item?.taskId
+            };
+
+            setComments((oldItems) => [...oldItems, data])
             setInput("");
         }catch(err) {
             console.log(err);
