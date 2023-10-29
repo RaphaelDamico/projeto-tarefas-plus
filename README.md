@@ -1,5 +1,5 @@
 
-Projeto Tarefas Plus:
+<h1 align="center">Projeto Tarefas Plus</h1>
 Apliacação desenvolvida com NextJS e TypeScript para gerenciar e comentar tarefas.
 
 Clonar Projeto: https://github.com/RaphaelDamico/projeto-task.git
@@ -12,5 +12,5 @@ nextauth: Google Povider
 
 Banco de dados: Firebase
 
-Front end: NextJS, CSS Modules.
+
 
