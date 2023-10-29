@@ -4,15 +4,15 @@ Projeto desenvolvido com NextJS e TypeScript para gerenciar e comentar tarefas.
 
 O Tarefas Plus é um aplicativo de gerenciamento de tarefas que possibilita o usuário a gerenciá-las e adicionar comentários nas suas próprias tarefas ou nas de outros usuários que também utilizam a aplicação.  
 
-<h1>Clonar Projeto:</h1>  https://github.com/RaphaelDamico/projeto-task.git
+<h3>Clonar Projeto:</h3>  https://github.com/RaphaelDamico/projeto-task.git
 
-<h1>Instalar dependências:</h1> npm install
+<h3>Instalar dependências:</h3> npm install
 
-<h1>Rodar aplicação local:</h1> npm run dev
+<h3>Rodar aplicação local:</h3> npm run dev
 
-<h1>nextauth:</h1> Google Povider
+<h3>nextauth:</h3> Google Povider
 
-<h1>Banco de dados:</h1> Firebase
+<h3>Banco de dados:</h3> Firebase
 
 
 
