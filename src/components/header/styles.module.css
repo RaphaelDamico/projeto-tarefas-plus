@@ -26,10 +26,11 @@
     font-size: 32px;
 }
 
-.logo span {
-    color: #ea3140;
-    padding-left: 2px;
+.span {
+    color: #FF0000	;
+    padding-left: 3px;
 }
+
 .loginButton {
     background-color: transparent;
     padding: 8px 32px;
