@@ -49,6 +49,12 @@
     background-color: #3183ff;
     padding: 12px 0;
     font-size: 18px;
+    transition: transform 0.4s;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.01);
 }
 
 .taskContainer {
