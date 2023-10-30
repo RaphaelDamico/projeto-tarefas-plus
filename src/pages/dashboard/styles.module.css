@@ -122,8 +122,13 @@
 }
 
 .trashButton {
-    cursor: pointer;
     background: transparent;
     border: 0;
     margin: 0 8px;
+    transition: transform 0.4s;
+}
+
+.trashButton:hover {
+    cursor: pointer;
+    transform: scale(1.08);
 }
