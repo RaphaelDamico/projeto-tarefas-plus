@@ -60,10 +60,10 @@
     padding: 4px 14px;
     border-radius: 4px;
     margin: 0 14px;
-    font-weight: bold;
     transition: transform 0.4s;
 }
 
 .link:hover {
     transform: scale(1.08);
+    font-weight: bold;
 }
