@@ -85,8 +85,15 @@
 .buttonTrash {
     border: 0;
     background: transparent;
-    cursor: pointer;
+    transition: transform 0.4s;
 }
+
+ .buttonTrash:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+ }
+
+
 
 .comment p {
     margin-top: 14px;
