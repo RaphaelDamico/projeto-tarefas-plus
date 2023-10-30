@@ -37,6 +37,10 @@
     height: 18px;
 }
 
+.checkbox:hover {
+    cursor: pointer;
+}
+
 .button {
     width: 100%;
     border: 0;
