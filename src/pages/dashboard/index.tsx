@@ -111,7 +111,7 @@ export default function Dashboard({ user }: HomeProps) {
                         
                         <form onSubmit={handleRegisterTask}>
                             <Textarea
-                                placeholder="Digite qual sua tarefa..."
+                                placeholder="Digite aqui sua tarefa..."
                                 value={input}
                                 onChange={ (event: ChangeEvent<HTMLTextAreaElement>) => setInput(event.target.value) }
                             />

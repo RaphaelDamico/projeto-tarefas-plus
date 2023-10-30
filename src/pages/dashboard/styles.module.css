@@ -3,7 +3,7 @@
 }
 
 .content {
-    background-color: #0f0f0f;
+    background-color: #363636;
     width: 100%;
     display: flex;
     align-items: center;
@@ -37,6 +37,10 @@
     height: 18px;
 }
 
+.checkbox:hover {
+    cursor: pointer;
+}
+
 .button {
     width: 100%;
     border: 0;
@@ -45,6 +49,12 @@
     background-color: #3183ff;
     padding: 12px 0;
     font-size: 18px;
+    transition: transform 0.4s;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.01);
 }
 
 .taskContainer {
