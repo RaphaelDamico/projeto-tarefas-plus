@@ -43,9 +43,7 @@
 }
 
 .box:hover {
-  transform: scale(1.08);
-  font-weight: bold;
-  
+  transform: scale(1.08); 
 }
 
 @media screen and (max-width: 580px) {
