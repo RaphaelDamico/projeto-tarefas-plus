@@ -24,11 +24,16 @@
 .logo {
     color: #fff;
     font-size: 32px;
+    transition: transform 0.4s;
 }
 
 .logo span {
     color: #FF0000	;
     padding-left: 3px;
+}
+
+.logo:hover {
+    transform: scale(1.08);
 }
 
 .loginButton {
@@ -65,5 +70,4 @@
 
 .link:hover {
     transform: scale(1.08);
-    font-weight: bold;
 }
